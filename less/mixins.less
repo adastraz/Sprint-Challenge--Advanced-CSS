@@ -1,1 +1,22 @@
 // Mixins Here
+.flex(@dir,@justify,@align){
+    display:flex;
+    flex-direction:@dir;
+    justify-content:@justify;
+    align-items:@align;
+}
+.button(@width,@pad,@height){
+    width:@width;
+    background-color:@btn-bg-color;
+    color:white;
+    border-radius:5px;
+    font-size:1.75rem;
+    text-align:center;
+    height:@height;
+    padding:@pad;
+    &:hover{
+        color:@btn-bg-color;
+        background-color:white;
+        border:2px solid @btn-bg-color;
+    }
+}
